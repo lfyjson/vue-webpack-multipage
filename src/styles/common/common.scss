@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+html,body {
+	min-height:100%;
+}
+
+body {
+	font-family: 'Microsoft Yahei';
+	color:#333;
+	background-color: #f3f3f7;
+}
+
+input {
+	font-family: 'Microsoft Yahei';
+}
+
+p {
+	line-height:1.6em;
+}
+
+a {
+	color:#333;
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+a:active, button:active, input:active {
+	background-color: rgba(0,0,0,.1);
+}
+
+.g-container {
+	width:10rem;
+	margin:0 auto;
+	font-size: 0.32rem;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+header {
+	position:relative;
+	height:1.146667rem;
+	line-height:1.146667rem;
+	background-color: $color;
+	font-size:0.4rem;
+	color:#fff;
+	text-align:center;
+}
+
+footer {
+	font-size: 0.4rem;
+	color:#999;
+	text-align: center;
+	padding:0.4rem 0;
+}
+
+.view-transition {
+	transition: opacity .2s ease;
+}
+
+.view-enter, .view-leave {
+	opacity: 0;
+}
+
+
+// .view-transition {
+// 	-webkit-transition: transform .3s ease;
+// }
+
+// .view-enter {
+// 	-webkit-transform:translate(100%, 0)
+// }
+
+// .view-leave {
+// 	-webkit-transform:translate(-100%, 0)
+// }
